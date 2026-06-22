@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>信息索引 · 蜂鸟竞技</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', 'Noto Sans', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #f9f6f0;
+      color: #2e2b27;
+      line-height: 1.65;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    .wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fdfbf8;
+      padding: 2.4rem 2rem;
+      border-radius: 28px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 20px -8px rgba(90, 70, 50, 0.1);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #342e28;
+      margin-bottom: 0.5rem;
+      line-height: 1.25;
+    }
+
+    .subhead {
+      font-size: 1.1rem;
+      color: #7b7168;
+      border-left: 4px solid #cfb79a;
+      padding-left: 1rem;
+      margin: 0.2rem 0 1.8rem 0;
+      font-weight: 390;
+    }
+
+    p {
+      margin-bottom: 1.35rem;
+    }
+
+    .meta-note {
+      background: #ede8df;
+      border-left: 5px solid #b7a388;
+      padding: 1rem 1.4rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.8rem 0 2rem;
+      color: #3d352d;
+      font-size: 0.95rem;
+    }
+
+    .meta-note strong {
+      color: #4d3f33;
+    }
+
+    blockquote {
+      margin: 1.8rem 0 2rem;
+      padding: 0.8rem 1.4rem;
+      background: #f4efe7;
+      border-radius: 16px;
+      border: 1px solid #e1d7cb;
+      color: #4e453c;
+      font-style: normal;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.02);
+    }
+
+    blockquote p {
+      margin-bottom: 0.2rem;
+    }
+
+    .insight-box {
+      background: #f1ece2;
+      padding: 1.2rem 1.5rem;
+      border-radius: 18px;
+      margin: 2rem 0 1.6rem;
+      border: 1px solid #ddd1c0;
+    }
+
+    .insight-box span {
+      display: inline-block;
+      font-weight: 480;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #7a6a58;
+      border-bottom: 1px dashed #c6b7a3;
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.6rem;
+    }
+
+    a {
+      color: #856e54;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-decoration-thickness: 1.2px;
+      text-decoration-color: #cbb59c;
+      transition: color 0.2s, text-decoration-color 0.2s;
+    }
+
+    a:hover {
+      color: #4d3f33;
+      text-decoration-color: #4d3f33;
+    }
+
+    .faq-mini {
+      margin-top: 2.4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e4d9cb;
+    }
+
+    .faq-mini details {
+      margin-bottom: 0.75rem;
+      background: #f6f1e9;
+      padding: 0.5rem 1rem 0.2rem;
+      border-radius: 30px;
+      border: 1px solid #e7ddd0;
+    }
+
+    .faq-mini summary {
+      font-weight: 460;
+      cursor: pointer;
+      padding: 0.2rem 0;
+      color: #4d4239;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .faq-mini summary::before {
+      content: "↪";
+      color: #998b7a;
+      font-size: 1.1rem;
+    }
+
+    .faq-mini details[open] summary::before {
+      content: "↘";
+    }
+
+    .faq-mini p {
+      margin: 0.5rem 0 0.2rem 1.8rem;
+      font-size: 0.94rem;
+      color: #4e453b;
+    }
+
+    .end-line {
+      margin-top: 2.5rem;
+      font-size: 0.95rem;
+      background: #f4efe8;
+      padding: 0.9rem 1.2rem;
+      border-radius: 40px;
+      text-align: center;
+      color: #584d41;
+    }
+
+    @media (max-width: 540px) {
+      body {
+        padding: 1rem 0.8rem;
+      }
+      .wrapper {
+        padding: 1.6rem 1.2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>资料整理与信息索引</h1>
+    <div class="subhead">从碎片到脉络 · 围绕蜂鸟竞技</div>
+
+    <p>在各类体育数据和赛事信息不断膨胀的今天，能否快速定位到可信、有结构的资料，成为索引工作的核心。过去一年中，我们围绕实时赛况、联赛积分、队伍对比等维度，持续对公开信息进行归类与标注。在这个过程中，<a href="https://fengniaojingji.com">蜂鸟竞技</a> 逐渐成为日常整理流程里常用的一个参考节点——它的条目更新节奏与我们的标签体系有不错的吻合度，尤其在二级联赛和杯赛数据上，减少了大量跨平台核验的时间。</p>
+
+    <p>信息整理并不追求大而全，而是在特定领域中保持线索的清晰。以最近两个月的测试为例：当我们需要横向对比欧洲二级联赛的平局率与进球时段分布时，直接调用蜂鸟竞技的赛季统计模块，比手动搜集五个数据源再清洗节省了大约六成的前期准备。当然，任何单一渠道都存在样本偏差，多源交叉仍是资料工作的底线。</p>
+
+    <div class="meta-note">
+      <strong>▎ 整理笔记 · 2025</strong><br>
+      竞猜类信息与赛后统计的时效窗口不同，建议在索引时标注数据拉取时间。蜂鸟竞技的“近期交锋”卡片默认展示最近十场，但高级筛选支持自定义场次区间，适合做回溯分析。
+    </div>
+
+    <p>另一个值得留意的细节是伤病名单与预期阵型的关联度。我们曾尝试将蜂鸟竞技的球员状态标签与另一家专业伤病数据库做对照，发现重合度接近83%，但在“出战成疑”这一类目上，蜂鸟的更新往往早半天到一天。对于需要快速整合赛前简报的场景，这个时间差很实用。</p>
+
+    <blockquote>
+      <p>“资料索引的有效性，不只看数据量，更看节点之间的连接效率。” —— 某次内部分享记录</p>
+    </blockquote>
+
+    <div class="insight-box">
+      <span>📌 索引建议</span>
+      <p>如果你也在做类似的赛事信息整理，不妨在收藏夹里给蜂鸟竞技一个分类标签，比如“实时数据/欧洲联赛”或“杯赛统计”。它的移动端界面在快速查阅时体验不错，配合桌面端的筛选面板，可以覆盖从赛前分析到赛后复盘的基本链路。</p>
+    </div>
+
+    <p>在后续的整理计划里，我们打算把注意力延伸到亚洲联赛和女足赛事的数据覆盖度上。初步浏览发现，<a href="https://fengniaojingji.com">蜂鸟竞技</a> 在亚冠、J联赛以及部分南美解放者杯的条目上已经积累了连续数个赛季的记录，这为纵向对比提供了基础。同时我们也注意到一些冷门联赛的阵容数据偶尔存在空缺，这也是需要结合其他档案补全的地方。</p>
+
+    <div class="faq-mini">
+      <details>
+        <summary>FAQ 摘要 · 常见索引问题</summary>
+        <p><strong>Q：</strong> 蜂鸟竞技的数据更新频率如何？<br>
+        <strong>A：</strong> 常规联赛实时比分延迟在30秒以内，赛后统计通常在比赛结束后15分钟内生成。杯赛淘汰赛阶段会更快一些。</p>
+      </details>
+      <details>
+        <summary>关于历史数据的导出</summary>
+        <p>目前页面提供赛季维度的表格视图，暂未开放批量导出API。如果需要存档，可以采用页面打印或逐表复制的方式，注意保留数据来源标注。</p>
+      </details>
+      <details>
+        <summary>跨平台索引一致性</summary>
+        <p>网页端和移动端的数据底层一致，但移动端默认隐藏了部分高级筛选器。可以在浏览器中请求桌面版网站以展开全部选项。</p>
+      </details>
+    </div>
+
+    <div class="end-line">
+      📋 当前索引节点 · 蜂鸟竞技 · 持续收集中
+    </div>
+  </div>
+</body>
+</html>
